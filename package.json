@@ -1,0 +1,30 @@
+{
+  "name": "pi-notify-glass",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "macOS Glass notifications for Pi agent lifecycle events.",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "notification",
+    "macos",
+    "glass"
+  ],
+  "main": "index.ts",
+  "exports": "./index.ts",
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --experimental-strip-types --check index.ts"
+  }
+}
